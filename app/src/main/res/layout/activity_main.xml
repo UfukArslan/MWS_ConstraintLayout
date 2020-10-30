@@ -4,36 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:maxWidth="@dimen/MaxWidth"
+    android:maxHeight="@dimen/MaxHeight"
     tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/btn_A"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="A"
         android:textSize="25sp"
-        android:id="@+id/btn_A"
-        app:layout_constraintLeft_toLeftOf="parent"/>
+        app:layout_constraintLeft_toLeftOf="parent" />
+
     <Button
+        android:id="@+id/btn_B"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="B"
         android:textSize="25sp"
-        android:id="@+id/btn_B"
-        app:layout_constraintStart_toEndOf="@id/btn_A"/>
+        app:layout_constraintStart_toEndOf="@id/btn_A" />
+
     <Button
+        android:id="@+id/btn_C"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="C"
         android:textSize="25sp"
-        android:id="@+id/btn_C"
-        app:layout_constraintTop_toBottomOf="@id/btn_A"/>
+        app:layout_constraintTop_toBottomOf="@id/btn_A" />
+
     <Button
+        android:id="@+id/btn_D"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="D"
         android:textSize="25sp"
-        android:id="@+id/btn_D"
         app:layout_constraintStart_toEndOf="@id/btn_C"
-        app:layout_constraintTop_toBottomOf="@id/btn_B"/>
+        app:layout_constraintTop_toBottomOf="@id/btn_B" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
